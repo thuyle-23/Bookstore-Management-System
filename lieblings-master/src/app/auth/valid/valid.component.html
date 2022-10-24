@@ -1,0 +1,33 @@
+<div class="login__page" [style.background-image]="'url(assets/images/IMG_0058.jfif)'">
+    <div class="login__row min-h-screen">
+      <div class="login__hero flex flex-col justify-center items-center py-10 px-4 sm:px-8 xl:px-20 text-white">
+        <a [routerLink]="['']" class="w-48 inline-block"><img src="assets/images/logo.png" alt="Lieblings" /></a>
+        <h2 class="text-center mt-6">WELCOME BACK!</h2>
+      </div>
+      <div class="login__content p-4 sm:p-8 flex flex-col justify-center bg-accent">
+        <div class="login w-full max-w-xl rounded-md mx-auto border p-4 sm:p-8 xl:p-20">
+          <form>
+            <div class="swal2-icon swal2-success swal2-animate-success-icon" style="display: flex;">
+                <div class="swal2-success-circular-line-left" style="background-color: rgb(255, 255, 255);"></div>
+                  <span class="swal2-success-line-tip"></span>
+                  <span class="swal2-success-line-long"></span>
+                  <div class="swal2-success-ring"></div> 
+                  <div class="swal2-success-fix" style="background-color: rgb(255, 255, 255);"></div>
+                  <div class="swal2-success-circular-line-right" style="background-color: rgb(255, 255, 255);"></div>
+                 </div>
+                 <!-- <div class="swal2-icon swal2-error swal2-animate-error-icon" style="display: flex;"><span class="swal2-x-mark"><span class="swal2-x-mark-line-left"></span><span class="swal2-x-mark-line-right"></span></span></div> -->
+            <div class="mb-4 mt-6">
+              <label class="block text-gray-700 text-sm font-semibold mb-2" htmlFor="email"> A Link To Reset Your Password Has Been Sent To Ee@Gmail.Com </label>
+              <a class="text-gray-700 text-sm  inline-flex items-center"> Emails may experience a few minute delay. </a>
+              <a class="text-gray-700 text-sm  inline-flex items-center"> If you have not received an email, please check your junk and spam folders. </a>
+              <a class="text-gray-700 text-sm  inline-flex items-center"> If you still don't receive the email after requesting a password reset, wait 24 hours and try again. </a>
+            </div>
+          </form>
+          <div class="mt-4">
+            <a [routerLink]="['/']"  class="text-gray-700 text-sm hover:text-accent inline-flex items-center"><mat-icon class="h-4 w-4 leading-4 text-lg mr-2">keyboard_backspace</mat-icon>Go to Home</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
