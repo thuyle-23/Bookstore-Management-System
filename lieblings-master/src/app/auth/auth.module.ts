@@ -8,7 +8,8 @@ import { SharedModule } from '../shared/shared.module';
 import { ForgotComponent } from './forgot/forgot.component';
 import { ValidComponent } from './valid/valid.component';
 import { Ng9PasswordStrengthBarModule } from 'ng9-password-strength-bar';
-import {FormsModule} from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import {FormsModule} from '@angular/forms';
     AuthRoutingModule,
     SharedModule,
     Ng9PasswordStrengthBarModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class AuthModule { }

@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { OnestepcheckoutComponent } from './onestepcheckout/onestepcheckout.component';
 import { BaseLayoutComponent } from './shared/components/layouts/base-layout/base-layout.component';
+import { SuccessComponent } from './success/success.component';
 
 const baseLayoutRouting: Routes = [
   {
@@ -19,7 +22,19 @@ const baseLayoutRouting: Routes = [
     path: '',
     pathMatch: 'full',
     loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
-  }
+  },
+  {
+    path: 'checkout',
+    component: CheckoutComponent
+  },
+  {
+    path: 'onestepcheckout',
+    component: OnestepcheckoutComponent
+  },
+  {
+    path: 'success',
+    component: SuccessComponent
+  },
 ];
 
 const routes: Routes = [

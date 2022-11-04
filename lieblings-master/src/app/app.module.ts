@@ -9,9 +9,15 @@ import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
+import {MatRadioModule} from '@angular/material/radio';
+
+import { HttpClientModule } from '@angular/common/http';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { OnestepcheckoutComponent } from './onestepcheckout/onestepcheckout.component';
+import { SuccessComponent } from './success/success.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, CheckoutComponent, OnestepcheckoutComponent, SuccessComponent],
   imports: [BrowserModule, 
     AppRoutingModule, 
     BrowserAnimationsModule, 
@@ -20,6 +26,8 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
     FormsModule,
     ReactiveFormsModule, 
     MatCarouselModule,
+    HttpClientModule,
+    MatRadioModule
 
   ],
   providers: [],

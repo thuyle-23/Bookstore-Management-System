@@ -7,9 +7,14 @@ import { SharedModule } from '../shared/shared.module';
 import { HomeProductsComponent } from './home-products/home-products.component';
 import { NgParticlesModule } from 'ng-particles';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 @NgModule({
   declarations: [HomeComponent, HomeProductsComponent],
-  imports: [CommonModule, HomeRoutingModule, SharedModule, NgParticlesModule, MatCarouselModule.forRoot()]
+  imports: [CommonModule, HomeRoutingModule, 
+    SharedModule, NgParticlesModule, MatCarouselModule.forRoot(),
+    MatGridListModule, MatTabsModule, MatButtonToggleModule]
 })
 export class HomeModule {}

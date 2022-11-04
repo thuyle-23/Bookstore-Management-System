@@ -1,23 +1,9 @@
-<mat-carousel
-timings="250ms ease-in"
-[autoplay]="true"
-interval="4000"
-color="accent"
-proportion="35"
-slides="5"
-[loop]="true"
-[hideArrows]="false"
-[hideIndicators]="false"	
-[useKeyboard]="true"
-[useMouseWheel]="false"
-orientation="ltr"
->
-<mat-carousel-slide
-  #matCarouselSlide
-  *ngFor="let slide of slides; let i = index"
-  [image]="slide.image"
-  [hideOverlay]="true">
-</mat-carousel-slide>
+<mat-carousel timings="250ms ease-in" [autoplay]="true" interval="4000" color="accent" proportion="40" slides="4"
+  [loop]="true" [hideArrows]="false" [hideIndicators]="false" [useKeyboard]="true" [useMouseWheel]="false"
+  orientation="ltr">
+  <mat-carousel-slide #matCarouselSlide *ngFor="let slide of slides; let i = index" [image]="slide.image"
+    [hideOverlay]="true">
+  </mat-carousel-slide>
 </mat-carousel>
 
 <!-- <div class="ll-hero">
@@ -44,7 +30,7 @@ orientation="ltr"
 
 <div class="ll-service-area">
   <div class="container">
-    <h1 class="ll-service__title text-center font-extralight mb-12">Digital - Micro - Services</h1>
+    <h1 class="ll-service__title text-center font-extralight mb-12">A STEP-BY-STEP GUIDE ON</h1>
     <div class="ll-services grid grid-cols-12 gap-8">
       <div class="ll-service col-span-12 sm:col-span-6 lg:col-span-3">
         <div class="number">01</div>
@@ -69,97 +55,81 @@ orientation="ltr"
     </div>
   </div>
 </div>
-
-<!-- <div class="ll-about mt-28 mb-28">
-  <div class="container">
-    <div class="flex flex-wrap">
-      <div class="lg:w-1/2 lg:order-last">
-        <a href="javascript:void(0)" class="ll-about__img relative block">
-          <img src="assets/images/about.jpg" alt="About" />
-          <mat-icon class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">play_circle_filled</mat-icon>
+<div class="product-categories">
+  <span class="ico_menu_red" style="margin-right: 8px;"></span>
+  <span class="product-header-title">PRODUCT CATEGORY</span>
+</div>
+<div class="desktop_only">
+  <div class="fhs_block" style="margin-top: 24px;">
+    <div class="fhs_block_line">
+      <div></div>
+    </div>
+    <div class="fhs_block_head">
+      <div class="menu_category_block_content_list" style="display: grid;grid-template-columns: repeat(8, 1fr);">
+        <a href="/van-phong-pham/dung-cu-hoc-sinh/balo.html?order=created_at&amp;limit=24&amp;p=1&amp;fhs_campaign=categoryicon"
+          class="fhs_column_center">
+          <img class=" lazyloaded" src="https://cdn0.fahasa.com/media/wysiwyg/Duy-VHDT/100x100_balo.png"
+            data-src="https://cdn0.fahasa.com/media/wysiwyg/Duy-VHDT/100x100_balo.png" style="margin: auto">
+          <div class="fhs_nowrap_two fhs_center_center" style="margin-top: 16px; font-size: 1.23em;">Balo</div>
+        </a>
+        <a href="/van-phong-pham/but.html?order=num_orders&amp;limit=24&amp;p=1&amp;fhs_campaign=categoryicon"
+          class="fhs_column_center">
+          <img class=" lazyloaded" src="https://cdn0.fahasa.com/media/wysiwyg/Duy-VHDT/100x100_but.png"
+            data-src="https://cdn0.fahasa.com/media/wysiwyg/Duy-VHDT/100x100_but.png" style="margin: auto">
+          <div class="fhs_nowrap_two fhs_center_center" style="margin-top: 16px; font-size: 1.23em;">Bút</div>
+        </a>
+        <a href="/van-phong-pham/san-pham-ve-giay/t-p-v/sort-by/created_at/sort-direction/asc.html?fhs_campaign=categoryicon"
+          class="fhs_column_center">
+          <img class=" lazyloaded" src="https://cdn0.fahasa.com/media/wysiwyg/Duy-VHDT/100x100_tap.png"
+            data-src="https://cdn0.fahasa.com/media/wysiwyg/Duy-VHDT/100x100_tap.png" style="margin: auto">
+          <div class="fhs_nowrap_two fhs_center_center" style="margin-top: 16px; font-size: 1.23em;">Tập</div>
+        </a>
+        <a href="/sach-trong-nuoc/giao-khoa-tham-khao/lop-2.html?fhs_campaign=categoryicon" class="fhs_column_center">
+          <img class=" lazyloaded" src="https://cdn0.fahasa.com/media/wysiwyg/Duy-VHDT/Sach-tham-khao.jpg"
+            data-src="https://cdn0.fahasa.com/media/wysiwyg/Duy-VHDT/Sach-tham-khao.jpg" style="margin: auto">
+          <div class="fhs_nowrap_two fhs_center_center" style="margin-top: 16px; font-size: 1.23em;">Sách tham khảo
+          </div>
+        </a>
+        <a href="/sach-trong-nuoc/sach-hoc-ngoai-ngu.html?fhs_campaign=categoryicon" class="fhs_column_center">
+          <img class=" lazyloaded" src="https://cdn0.fahasa.com/media/wysiwyg/Duy-VHDT/Sach-hoc-ngoai-ngu.jpg"
+            data-src="https://cdn0.fahasa.com/media/wysiwyg/Duy-VHDT/Sach-hoc-ngoai-ngu.jpg" style="margin: auto">
+          <div class="fhs_nowrap_two fhs_center_center" style="margin-top: 16px; font-size: 1.23em;">Sách học <br>ngoại
+            ngữ</div>
+        </a>
+        <a href="/sach-trong-nuoc/van-hoc-trong-nuoc.html?fhs_campaign=categoryicon" class="fhs_column_center">
+          <img class=" lazyloaded" src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/category/van-hoc.png"
+            data-src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/category/van-hoc.png" style="margin: auto">
+          <div class="fhs_nowrap_two fhs_center_center" style="margin-top: 16px; font-size: 1.23em;">Văn học</div>
+        </a>
+        <a href="/foreigncategory.html?fhs_campaign=categoryicon" class="fhs_column_center">
+          <img class=" lazyloaded" src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/category/foreign-books.png"
+            data-src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/category/foreign-books.png" style="margin: auto">
+          <div class="fhs_nowrap_two fhs_center_center" style="margin-top: 16px; font-size: 1.23em;">Foreign<br>Books
+          </div>
+        </a>
+        <a href="/do-choi-luu-niem.html?fhs_campaign=categoryicon" class="fhs_column_center">
+          <img class=" lazyloaded" src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/category/do-choi.png"
+            data-src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/category/do-choi.png" style="margin: auto">
+          <div class="fhs_nowrap_two fhs_center_center" style="margin-top: 16px; font-size: 1.23em;">Đồ chơi</div>
         </a>
       </div>
-      <div class="lg:w-1/2 lg:pr-10 mt-8 lg:mt-0 ll-about__text">
-        <h2 class="font-medium">The world's best advice from real practitioners</h2>
-        <div class="mt-12">
-          <h5 class="font-medium text-black">Partly real practitioners as consultants</h5>
-          <p class="mt-1">With us, practitioners advise who were previously advised and who are now passing on this knowledge.</p>
-        </div>
-        <div class="mt-8">
-          <h5 class="font-medium text-black">Not salespeople, but solution providers</h5>
-          <p class="mt-1">With us you advise consultants who also implement the solutions, not just sell them.</p>
-        </div>
-        <div class="mt-8">
-          <h5 class="font-medium text-black">Without a journey, we “call” in</h5>
-          <p class="mt-1">With us, there is no need to travel to the advice center and thus the part that no consultant likes.</p>
-        </div>
-      </div>
     </div>
   </div>
-</div> -->
-
+</div>
+<br><br>
+<div class="book-categories">
+  <img src="https://cdn0.fahasa.com/skin/frontend/base/default/images/ico_dealhot.png" class="center">
+  <span class="product-header-title">MOST RATING BOOKS</span>
+</div>
 <ll-home-products></ll-home-products>
-
-<div class="ll-process-area bg-black mt-16">
-  <div class="container">
-    <h2 class="ll-process__title text-center text-warn mb-8">How it works</h2>
-    <div class="ll-processes grid grid-cols-12 gap-8">
-      <div class="ll-process col-span-12 sm:col-span-6 lg:col-span-3">
-        <div class="number">01</div>
-        <h3 class="mb-2 text-warn font-bold">Choose</h3>
-        <p class="text-white">You choose the micro-service that you need right now.</p>
-      </div>
-      <div class="ll-process col-span-12 sm:col-span-6 lg:col-span-3">
-        <div class="number">02</div>
-        <h3 class="mb-2 text-warn font-bold">Book</h3>
-        <p class="text-white">You choose the micro-service that you need right now.</p>
-      </div>
-      <div class="ll-process col-span-12 sm:col-span-6 lg:col-span-3">
-        <div class="number">03</div>
-        <h3 class="mb-2 text-warn font-bold">Contact</h3>
-        <p class="text-white">You choose the micro-service that you need right now.</p>
-      </div>
-      <div class="ll-process col-span-12 sm:col-span-6 lg:col-span-3">
-        <div class="number">04</div>
-        <h3 class="mb-2 text-warn font-bold">Execution</h3>
-        <p class="text-white">You choose the micro-service that you need right now.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="pt-20 ll-starter">
-  <div class="container">
-    <h2 class="text-center mb-16 xl:mb-0">Start with you desire</h2>
-    <div class="grid xl:grid-cols-2 gap-x-8 mt-10">
-      <div class="ll-starter__card px-5 grid grid-cols-12 place-items-center">
-        <div class="col-span-5 px-5">
-          <img class="-mt-14" src="assets/images/starter-01.png" alt="" />
-        </div>
-        <div class="py-5 col-span-7">
-          <h4 class="text-white mb-4">Start as a buyer</h4>
-          <p class="text-white mb-7">
-            Become part of your Lieblings services and book the micro-service that will help your production company at any time.
-          </p>
-          <a [routerLink]="['/auth/signup']" routerLinkActive="router-link-active" mat-flat-button color="warn" class="font-semibold"
-            >Join Now</a
-          >
-        </div>
-      </div>
-      <div class="ll-starter__card px-5 grid grid-cols-12 place-items-center mt-16 xl:mt-0">
-        <div class="col-span-5 px-5">
-          <img class="-mt-14" src="assets/images/starter-02.png" alt="" />
-        </div>
-        <div class="py-5 col-span-7 order-first text-right">
-          <h4 class="text-white mb-4">Start as a consultant</h4>
-          <p class="text-white mb-7">
-            Become part of your Lieblings services and book the micro-service that will help your production company at any time.
-          </p>
-          <a [routerLink]="['/auth/signup']" routerLinkActive="router-link-active" mat-flat-button color="warn" class="font-semibold"
-            >Join Now</a
-          >
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<!-- <br><br> -->
+<!-- <div class="stationary-categories">
+  <section style = "margin: auto">
+    <mat-button-toggle-group>
+      <mat-button-toggle value="bold">Bold</mat-button-toggle>
+      <mat-button-toggle value="italic">Italic</mat-button-toggle>
+      <mat-button-toggle value="underline">Underline</mat-button-toggle>
+    </mat-button-toggle-group>
+  </section>
+  
+</div> -->

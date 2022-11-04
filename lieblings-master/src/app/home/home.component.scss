@@ -205,3 +205,100 @@
     }
   }
 }
+.product-categories {
+  background-color: #ff5722;
+  height: 50px;
+  margin: auto;
+  width: 88%;
+  position: center;
+  display: flex;
+  align-items: center;
+  
+  // justify-content: center;
+}
+.product-header-title {
+  font-weight: 550;
+  margin-left: 10px;
+  font-size: 1.31em;
+  color: #1F1D1D;
+}
+.card-product{
+  margin: auto;
+  width: 88%;
+  position: center;
+  display: flex;
+  align-items: center;
+}
+.product-header-title {
+  font-weight: 550;
+  margin-left: 10px;
+  font-size: 1.31em;
+  color: #1F1D1D;
+}
+.book-categories {
+  background-color: #FCDDEF;
+  height: 50px;
+  margin: auto;
+  width: 88%;
+  position: center;
+  display: flex;
+  align-items: center;
+}
+.ico_menu_red {
+  background: url(https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_menu_red.svg) no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  height: 32px;
+  width: 32px;
+}
+.desktop_only {
+  display: flex;
+  background-color: #fff;
+  width: 88%;
+  margin: auto;
+}
+.fhs_block {
+  margin-top: 16px;
+  margin: auto;
+}
+.fhs_block > .fhs_block_line {
+  padding: 0 16px;
+  background-color: #fff;
+}
+.fhs_block > div {
+  background-color: #fff;
+}
+.fhs_nowrap_two {
+  line-height: 1.4em;
+  word-break: break-word;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  min-height: 2.8em;
+  max-height: 2.8em;
+}
+.fhs_center_center {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+}
+.stationary-categories {
+  background-color: #FBC02D;
+  height: 50px;
+  margin: auto;
+  width: 88%;
+  position: center;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,128 @@
+.fhs_checkout_block {
+    padding: 8px 16px;
+    background-color: white;
+    margin-bottom: 16px;
+    font-size: 14px;
+    width:80%;
+
+    margin: auto;
+
+}
+.fhs_checkout_block > .fhs_checkout_block_title {
+    padding: 8px 0;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-bottom: 1px solid #ced4da;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-items: center;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+.fhs_checkout_block > .fhs_checkout_block_content {
+    padding: 4px 0;
+    position: relative;
+}
+.fhs_checkout_block > .fhs_checkout_block_content > .fhs_checkout_block_address_block.gtgt > .fhs-input-box > .fhs-input-item, .fhs_checkout_block > .fhs_checkout_block_content > .fhs_checkout_block_address_block {
+    max-width: 600px;
+}
+.fhs-input-box {
+    padding: 8px 0;
+    clear: both;
+}
+.fhs-input-group-horizontal-shippingaddress > label:first-of-type {
+    width: 150px;
+}
+label {
+    color: #333333;
+}
+label {
+    padding: 4px;
+    font-weight: normal;
+    color: #555555;
+}
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.fhs-input-group-horizontal-shippingaddress > .fhs-input-item {
+    width: calc(100% - 154px);
+    display: inline-block;
+}
+.fhs-input-group {
+    position: relative;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-items: center;
+}
+.fhs-input-group-horizontal-shippingaddress > .fhs-input-item > .fhs-input-group > .fhs-textbox {
+    height: 30px;
+    font-weight: 600;
+    font-size: 1em;
+}
+.fhs-selectbox, .fhs-textbox {
+    width: 100%;
+    padding: 0.375rem 1.1em;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+input, select, textarea {
+    width: 100%;
+    border: 2px solid #e6e6e6;
+}
+.button, input {
+    height: 39px;
+    line-height: 1.42857;
+}
+input, select, textarea, button {
+    font-size: 12px;
+    color: #545759;
+    background-color: white;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+input, select, textarea, button {
+    vertical-align: middle;
+    color: #888888;
+    background: #fff;
+}
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+input {
+    line-height: normal;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}

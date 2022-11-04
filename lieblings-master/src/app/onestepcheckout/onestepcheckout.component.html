@@ -1,0 +1,310 @@
+<div id="fhs_checkout_block_address" class="fhs_checkout_block" style="position: relative;top: 90px;">
+    <div class="fhs_checkout_block_title">Shipping Address</div>
+    <div class="fhs_checkout_block_content">
+        <div class="fhs_checkout_block_address_block">
+            <div class="fhs-input-box fhs-input-group-horizontal-shippingaddress">
+                <label>Full name of recipient</label>
+                <div class="fhs-input-item">
+                    <div class="fhs-input-group">
+                        <input class="fhs-textbox require_check check_shipping_address" type="text"
+                            validate_type="fullname" placeholder="Press full name of recipient"
+                            id="fhs_shipping_fullname" name="fullname" value="" maxlength="100">
+                        <input type="hidden" id="fhs_shipping_firstname" name="firstname" value="">
+                        <input type="hidden" id="fhs_shipping_lastname" name="lastname" value="">
+                        <span class="fhs-input-icon fhs-textbox-alert"></span>
+                    </div>
+                </div>
+                <div class="fhs-input-alert"></div>
+            </div>
+            <div class="fhs-input-box fhs-input-group-horizontal-shippingaddress">
+                <label>Email</label>
+                <div class="fhs-input-item">
+                    <div class="fhs-input-group">
+                        <input class="fhs-textbox require_check check_shipping_address" type="text"
+                            validate_type="email" placeholder="Press email" id="fhs_shipping_email" name="email"
+                            value="" maxlength="200">
+                        <span class="fhs-input-icon fhs-textbox-alert"></span>
+                    </div>
+                </div>
+                <div class="fhs-input-alert"></div>
+            </div>
+            <div class="fhs-input-box fhs-input-group-horizontal-shippingaddress">
+                <label>Phone number</label>
+                <div class="fhs-input-item">
+                    <div class="fhs-input-group">
+                        <input class="fhs-textbox require_check check_shipping_address" type="text"
+                            validate_type="shipping_telephone" placeholder="Ex: 0979123xxx (10 digit)"
+                            id="fhs_shipping_telephone" name="telephone" value="" maxlength="10">
+                        <span class="fhs-input-icon fhs-textbox-alert"></span>
+                    </div>
+                </div>
+                <div class="fhs-input-alert"></div>
+            </div>
+            <div class="fhs-input-box fhs-input-group-horizontal-shippingaddress">
+                <label>Country</label>
+                <div class="fhs-input-item">
+                    <div class="fhs-input-group">
+                        <select name="fhs_shipping_country_select" id="fhs_shipping_country_select"
+                            class="fhs-selectbox select2-hidden-accessible" title="Country"
+                            data-select2-id="fhs_shipping_country_select" tabindex="-1" aria-hidden="true">
+                            <option value=""> </option>
+                            <option value="AU">Australia</option>
+                            <option value="BR">Brazil</option>
+                            <option value="CA">Canada</option>
+                            <option value="CU">Cuba</option>
+                            <option value="DK">Denmark</option>
+                            <option value="FI">Finland</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                            <option value="HK">Hong Kong SAR China</option>
+                            <option value="HU">Hungary</option>
+                            <option value="ID">Indonesia</option>
+                            <option value="IT">Italy</option>
+                            <option value="JP">Japan</option>
+                            <option value="MY">Malaysia</option>
+                            <option value="NL">Netherlands</option>
+                            <option value="NZ">New Zealand</option>
+                            <option value="PH">Philippines</option>
+                            <option value="PL">Poland</option>
+                            <option value="RU">Russia</option>
+                            <option value="SG">Singapore</option>
+                            <option value="KR">South Korea</option>
+                            <option value="ES">Spain</option>
+                            <option value="SE">Sweden</option>
+                            <option value="CH">Switzerland</option>
+                            <option value="TW">Taiwan</option>
+                            <option value="TH">Thailand</option>
+                            <option value="GB">United Kingdom</option>
+                            <option value="US">United States</option>
+                            <option value="VN" selected="selected" data-select2-id="2">Vietnam</option>
+                        </select><span class="select2 select2-container select2-container--default" dir="ltr"
+                            data-select2-id="1" style="width: 233px;"><span class="selection"><span
+                                    class="select2-selection select2-selection--single" role="combobox"
+                                    aria-haspopup="true" aria-expanded="false" title="Country" tabindex="0"
+                                    aria-disabled="false"
+                                    aria-labelledby="select2-fhs_shipping_country_select-container"><span
+                                        class="select2-selection__rendered"
+                                        id="select2-fhs_shipping_country_select-container" role="textbox"
+                                        aria-readonly="true" title="Vietnam"><span
+                                            class="fhs_nowrap_one"></span></span><span class="select2-selection__arrow"
+                                        role="presentation"><b role="presentation"></b></span></span></span><span
+                                class="dropdown-wrapper" aria-hidden="true"></span></span> <input
+                            class="fhs-textbox require_check check_shipping_address" style="display: none;" type="text"
+                            validate_type="text" placeholder="Press country" id="fhs_shipping_country" name="country"
+                            value="" maxlength="200">
+                        <span class="fhs-input-icon fhs-textbox-alert"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="fhs-input-box fhs-input-group-horizontal-shippingaddress">
+                <label>Province/City</label>
+                <div class="fhs-input-item">
+                    <div class="fhs-input-group">
+                        <select id="fhs_shipping_city_select" class="fhs-input-select select2-hidden-accessible"
+                            data-select2-id="fhs_shipping_city_select" tabindex="-1" aria-hidden="true">
+                            <option value="" selected="" data-select2-id="9">Choose province/City</option>
+                            <option value="485">Hồ Chí Minh</option>
+                            <option value="486">Hải Phòng</option>
+                            <option value="487">Hà Nội</option>
+                            <option value="488">Đà Nẵng</option>
+                            <option value="489">Hưng Yên</option>
+                            <option value="490">Hải Dương</option>
+                            <option value="491">Quảng Ninh</option>
+                            <option value="492">Bắc Ninh</option>
+                            <option value="493">Bắc Giang</option>
+                            <option value="494">Lạng Sơn</option>
+                            <option value="495">Thái Nguyên</option>
+                            <option value="496">Bắc Kạn</option>
+                            <option value="497">Cao Bằng</option>
+                            <option value="498">Vĩnh Phúc</option>
+                            <option value="499">Phú Thọ</option>
+                            <option value="500">Tuyên Quang</option>
+                            <option value="501">Hà Giang</option>
+                            <option value="502">Yên Bái</option>
+                            <option value="503">Lào Cai</option>
+                            <option value="504">Hòa Bình</option>
+                            <option value="505">Sơn La</option>
+                            <option value="506">Điện Biên</option>
+                            <option value="507">Lai Châu</option>
+                            <option value="508">Hà Nam</option>
+                            <option value="509">Thái Bình</option>
+                            <option value="510">Nam Định</option>
+                            <option value="511">Ninh Bình</option>
+                            <option value="512">Thanh Hóa</option>
+                            <option value="513">Nghệ An</option>
+                            <option value="514">Hà Tĩnh</option>
+                            <option value="515">Quảng Bình</option>
+                            <option value="516">Quảng Trị</option>
+                            <option value="517">Thừa Thiên - Huế</option>
+                            <option value="518">Quảng Nam</option>
+                            <option value="519">Quảng Ngãi</option>
+                            <option value="520">Kon Tum</option>
+                            <option value="521">Bình Định</option>
+                            <option value="522">Gia Lai</option>
+                            <option value="523">Phú Yên</option>
+                            <option value="524">Đắk Lắk</option>
+                            <option value="525">Đăk Nông</option>
+                            <option value="526">Khánh Hòa</option>
+                            <option value="527">Ninh Thuận</option>
+                            <option value="528">Lâm Đồng</option>
+                            <option value="529">Bà Rịa - Vũng Tàu</option>
+                            <option value="530">Bình Thuận</option>
+                            <option value="531">Đồng Nai</option>
+                            <option value="532">Bình Dương</option>
+                            <option value="533">Bình Phước</option>
+                            <option value="534">Tây Ninh</option>
+                            <option value="535">Long An</option>
+                            <option value="536">Tiền Giang</option>
+                            <option value="537">Đồng Tháp</option>
+                            <option value="538">An Giang</option>
+                            <option value="539">Vĩnh Long</option>
+                            <option value="540">Cần Thơ</option>
+                            <option value="541">Hậu Giang</option>
+                            <option value="542">Kiên Giang</option>
+                            <option value="543">Bến Tre</option>
+                            <option value="544">Trà Vinh</option>
+                            <option value="545">Sóc Trăng</option>
+                            <option value="546">Bạc Liêu</option>
+                            <option value="547">Cà Mau</option>
+                        </select><span class="select2 select2-container select2-container--default" dir="ltr"
+                            data-select2-id="3" style="width: 228px;"><span class="selection"><span
+                                    class="select2-selection select2-selection--single" role="combobox"
+                                    aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false"
+                                    aria-labelledby="select2-fhs_shipping_city_select-container"><span
+                                        class="select2-selection__rendered"
+                                        id="select2-fhs_shipping_city_select-container" role="textbox"
+                                        aria-readonly="true"><span
+                                            class="select2-selection__placeholder"></span></span><span
+                                        class="select2-selection__arrow" role="presentation"><b
+                                            role="presentation"></b></span></span></span><span class="dropdown-wrapper"
+                                aria-hidden="true"></span></span>
+                        <input class="fhs-textbox require_check check_shipping_address" style="display: none;"
+                            type="text" validate_type="text" placeholder="Press province/City" id="fhs_shipping_city"
+                            name="city" value="" maxlength="200">
+                    </div>
+                </div>
+                <div class="fhs-input-alert"></div>
+            </div>
+            <div class="fhs-input-box fhs-input-group-horizontal-shippingaddress">
+                <label>District</label>
+                <div class="fhs-input-item">
+                    <div class="fhs-input-group">
+                        <select id="fhs_shipping_district_select" class="fhs-input-select select2-hidden-accessible"
+                            data-select2-id="fhs_shipping_district_select" tabindex="-1" aria-hidden="true"
+                            disabled="disabled">
+                            <option value="" selected="" data-select2-id="12">Choose district</option>
+                        </select><span
+                            class="select2 select2-container select2-container--default select2-container--disabled"
+                            dir="ltr" data-select2-id="4" style="width: 228px;"><span class="selection"><span
+                                    class="select2-selection select2-selection--single" role="combobox"
+                                    aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="true"
+                                    aria-labelledby="select2-fhs_shipping_district_select-container"><span
+                                        class="select2-selection__rendered"
+                                        id="select2-fhs_shipping_district_select-container" role="textbox"
+                                        aria-readonly="true"><span
+                                            class="select2-selection__placeholder"></span></span><span
+                                        class="select2-selection__arrow" role="presentation"><b
+                                            role="presentation"></b></span></span></span><span class="dropdown-wrapper"
+                                aria-hidden="true"></span></span>
+                        <input class="fhs-textbox require_check check_shipping_address" style="display: none;"
+                            type="text" validate_type="text" placeholder="Press district" id="fhs_shipping_district"
+                            name="district" value="" maxlength="200">
+                    </div>
+                </div>
+                <div class="fhs-input-alert"></div>
+            </div>
+            <div class="fhs-input-box fhs-input-group-horizontal-shippingaddress" style="display: none;">
+                <label>Zip/Postal Code</label>
+                <div class="fhs-input-item">
+                    <div class="fhs-input-group">
+                        <input class="fhs-textbox check_shipping_address" type="text"
+                            placeholder="Press zip/Postal Code" id="fhs_shipping_postcode" name="postcode" value=""
+                            maxlength="20">
+                        <span class="fhs-input-icon fhs-textbox-alert"></span>
+                    </div>
+                </div>
+                <div class="fhs-input-alert"></div>
+            </div>
+            <div class="fhs-input-box fhs-input-group-horizontal-shippingaddress">
+                <label>Wards</label>
+                <div class="fhs-input-item">
+                    <div class="fhs-input-group">
+                        <select id="fhs_shipping_wards_select" class="fhs-input-select select2-hidden-accessible"
+                            data-select2-id="fhs_shipping_wards_select" tabindex="-1" aria-hidden="true"
+                            disabled="disabled">
+                            <option value="" selected="" data-select2-id="13">Choose wards</option>
+                        </select><span
+                            class="select2 select2-container select2-container--default select2-container--disabled"
+                            dir="ltr" data-select2-id="5" style="width: 228px;"><span class="selection"><span
+                                    class="select2-selection select2-selection--single" role="combobox"
+                                    aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="true"
+                                    aria-labelledby="select2-fhs_shipping_wards_select-container"><span
+                                        class="select2-selection__rendered"
+                                        id="select2-fhs_shipping_wards_select-container" role="textbox"
+                                        aria-readonly="true"><span
+                                            class="select2-selection__placeholder"></span></span><span
+                                        class="select2-selection__arrow" role="presentation"><b
+                                            role="presentation"></b></span></span></span><span class="dropdown-wrapper"
+                                aria-hidden="true"></span></span>
+                        <input class="fhs-textbox require_check check_shipping_address" style="display: none;"
+                            type="text" validate_type="text" placeholder="Press district" id="fhs_shipping_ward"
+                            name="district" value="" maxlength="200">
+                    </div>
+                </div>
+                <div class="fhs-input-alert"></div>
+            </div>
+            <div class="fhs-input-box fhs-input-group-horizontal-shippingaddress">
+                <label>Shipping address</label>
+                <div class="fhs-input-item">
+                    <div class="fhs-input-group">
+                        <input class="fhs-textbox require_check check_shipping_address" type="text" validate_type="text"
+                            placeholder="Press shipping address" id="fhs_shipping_street" name="street" value=""
+                            maxlength="200">
+                        <span class="fhs-input-icon fhs-textbox-alert"></span>
+                    </div>
+                </div>
+                <div class="fhs-input-alert"></div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $jq("#fhs_shipping_country_select").select2({
+                placeholder: "Choose country",
+                allowClear: false
+            });
+            $jq("#fhs_shipping_city_select").select2({
+                placeholder: "Choose province/City",
+                allowClear: false
+            });
+            $jq("#fhs_shipping_district_select").select2({
+                placeholder: "Choose district",
+                allowClear: false
+            });
+            $jq("#fhs_shipping_wards_select").select2({
+                placeholder: "Choose wards",
+                allowClear: false
+            });
+        </script>
+    </div>
+</div>
+
+<div id="fhs_checkout_block_address" class="fhs_checkout_block" style="position: relative;top: 90px;">
+    <div class="fhs_checkout_block_title" >Shipping Method</div>
+    <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group"
+        [(ngModel)]="shippingMethod">
+        <mat-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
+            {{season}}
+        </mat-radio-button>
+    </mat-radio-group>
+</div>
+<div id="fhs_checkout_block_address" class="fhs_checkout_block" style="position: relative;top: 90px;">
+    <div class="fhs_checkout_block_title">Payment Method</div>
+    <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group"
+        [(ngModel)]="paymentMethod">
+        <mat-radio-button class="example-radio-button" *ngFor="let season of payments" [value]="season">
+            {{season}}
+        </mat-radio-button>
+    </mat-radio-group>
+</div>
+<div id="fhs_checkout_block_address" class="fhs_checkout_block" style="position: relative;top: 90px;">
+    <div class="fhs_checkout_block_title">Check Order Again</div>
+</div>

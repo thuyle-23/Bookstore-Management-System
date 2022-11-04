@@ -1,0 +1,156 @@
+.block {
+    margin-bottom: 30px;
+    position: relative;
+    background: white;
+    border: 1px solid #e6e6e6;
+    -webkit-box-shadow: 0 0 2px rgb(0 0 0 / 10%);
+    box-shadow: 0 0 2px rgb(0 0 0 / 10%);
+}
+.block-layered-nav {
+    padding: 0;
+    margin: 0;
+}
+.block {
+    clear: both;
+    margin-bottom: 30px;
+}
+.sidebar .block .block-content {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.block-layered-nav .block-content {
+    padding-top: 20px;
+}
+.block .block-content {
+    padding: 20px;
+}
+.block-layered-nav .block-content {
+    padding: 0;
+    margin: 0;
+}
+.block-layered-nav .currently {
+    padding: 5px 10px 5px 0;
+    margin-top: -30px;
+}
+.block-layered-nav .block-subtitle {
+    font-weight: 700;
+    display: none;
+}
+.block-layered-nav .block-subtitle {
+    display: none;
+}
+.block-layered-nav .block-subtitle {
+    margin: 0;
+    padding: 5px 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-bottom: 1px solid #f2f2f2;
+    font-family: SegoeUISemibold;
+}
+.block-layered-nav .m-filter-group {
+    position: relative;
+}
+.block-layered-nav .block-subtitle {
+    font-weight: 700;
+    display: none;
+}
+.block-layered-nav .block-subtitle {
+    display: none;
+}
+.block-layered-nav .block-subtitle {
+    margin: 0;
+    padding: 5px 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-bottom: 1px solid #f2f2f2;
+    font-family: SegoeUISemibold;
+}
+.block-layered-nav dl {
+    position: relative;
+    zoom: 1;
+    left: 0;
+    top: 0;
+}
+.block-layered-nav dt {
+    cursor: pointer;
+    text-transform: uppercase;
+    line-height: 100%;
+    padding: 10px 0;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 0px;
+    font-size: 13px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.block-layered-nav dd {
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid #f6f6f6;
+}
+dd {
+    margin-left: 0;
+}
+dt, dd {
+    line-height: 1.428571429;
+}
+.m-current-category {
+    padding-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #f7921f;
+    font-family: sans-serif;
+    /* margin-left: 20px; */
+}
+.m-child-category-list {
+    margin-left: 20px;
+}
+.m-expandable-filter {
+    overflow: hidden;
+    padding-top: 1px;
+}
+ol.m-filter-css-checkboxes li a.m-checkbox-unchecked, ol.m-filter-css-checkboxes li a.m-checkbox-checked {
+    padding-left: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+}
+ol.m-filter-css-checkboxes li a.m-checkbox-unchecked {
+    background: transparent url(https://cdn0.fahasa.com/skin/frontend/base/default/images/manapro_filtercheckboxes/ico_uncheck.png) 0 50% no-repeat;
+}
+.block-layered-nav dd li a {
+    color: #666;
+    padding: 0;
+    display: inline;
+    *display: inline;
+    zoom: 1;
+}
+.block-layered-nav li a {
+    color: #656565;
+}
+.block-layered-nav li a {
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.block-layered-nav dd li {
+    color: #333;
+    line-height: 22px;
+    margin: 0 0 7px 10px;
+    text-align: left;
+    width: 100%;
+    position: relative;
+}
+.block-layered-nav li {
+    list-style: none;
+}
+.m-show-more-action {
+    background: url(https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_morong.png) no-repeat right;
+}
+.m-show-more-action, .m-show-less-action {
+    color: #F7941E;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    user-select: none;
+    padding-right: 20px;
+}
