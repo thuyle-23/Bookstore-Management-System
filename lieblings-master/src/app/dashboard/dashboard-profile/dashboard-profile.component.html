@@ -1,4 +1,4 @@
-<div>
+<div id="form_large">
 	<!-- User Start -->
 	<div class="flex flex-wrap">
 		<div class="flex space-x-3 bg-primary rounded-md px-5 py-3 w-full sm:w-1/2">
@@ -23,7 +23,7 @@
 	<div class="border bg-white mt-8 rounded-md">
 		<div class="flex p-4 bg-gray-200">
 			<h3 class="text-normal">Primary Information</h3>
-			<button class="text-blue-400 hover:text-accent ml-auto flex">
+			<button class="text-blue-400 hover:text-accent ml-auto flex" (click)="editPrimaryInfo()">
 				<mat-icon class="_edit_icon mr-2">edit</mat-icon>
 				Edit</button>
 		</div>
@@ -33,7 +33,7 @@
 					<div class="ll-dataset__label">
 						Email:
 					</div>
-					<div class="ll-dataset__value">
+					<div class="ll-dataset__value" id="email">
 						example@mail.com
 					</div>
 				</div>
@@ -41,7 +41,7 @@
 					<div class="ll-dataset__label">
 						Number:
 					</div>
-					<div class="ll-dataset__value">
+					<div class="ll-dataset__value" id="number">
 						+880-12121-212123
 					</div>
 				</div>
@@ -51,7 +51,7 @@
 					<div class="ll-dataset__label">
 						Username:
 					</div>
-					<div class="ll-dataset__value">
+					<div class="ll-dataset__value" id="username">
 						user1
 					</div>
 				</div>
@@ -59,7 +59,7 @@
 					<div class="ll-dataset__label">
 						Business Role:
 					</div>
-					<div class="ll-dataset__value">
+					<div class="ll-dataset__value" id="bussrole">
 						Buyer
 					</div>
 				</div>
@@ -71,7 +71,7 @@
 	<div class="border bg-white mt-8 rounded-md">
 		<div class="flex p-4 bg-gray-200">
 			<h3 class="text-normal">Personal Information</h3>
-			<button class="text-blue-400 hover:text-accent ml-auto flex" click="editPrimaryInfo()">
+			<button class="text-blue-400 hover:text-accent ml-auto flex" (click)="editPersonalInfo()">
 				<mat-icon class="_edit_icon mr-2">edit</mat-icon>
 				Edit</button>
 		</div>
@@ -81,7 +81,7 @@
 					<div class="ll-dataset__label">
 						First Name:
 					</div>
-					<div class="ll-dataset__value">
+					<div class="ll-dataset__value" id="firstname">
 						Nonamers
 					</div>
 				</div>
@@ -89,7 +89,7 @@
 					<div class="ll-dataset__label">
 						Last Name:
 					</div>
-					<div class="ll-dataset__value">
+					<div class="ll-dataset__value" id="lastname">
 						None
 					</div>
 				</div>
@@ -97,7 +97,7 @@
 					<div class="ll-dataset__label">
 						Gender:
 					</div>
-					<div class="ll-dataset__value">
+					<div class="ll-dataset__value" id="gender">
 						Female
 					</div>
 				</div>
@@ -105,7 +105,7 @@
 					<div class="ll-dataset__label">
 						Date of Birth:
 					</div>
-					<div class="ll-dataset__value">
+					<div class="ll-dataset__value" id="dob">
 						23 December 2001
 					</div>
 				</div>
@@ -115,7 +115,7 @@
 					<div class="ll-dataset__label">
 						Contact Number:
 					</div>
-					<div class="ll-dataset__value">
+					<div class="ll-dataset__value" id="contactnumber">
 						+880-12121-212123
 					</div>
 				</div>
@@ -123,7 +123,7 @@
 					<div class="ll-dataset__label">
 						Organization:
 					</div>
-					<div class="ll-dataset__value">
+					<div class="ll-dataset__value" id="org">
 						Tech Incent
 					</div>
 				</div>
@@ -131,7 +131,7 @@
 					<div class="ll-dataset__label">
 						Occupation:
 					</div>
-					<div class="ll-dataset__value">
+					<div class="ll-dataset__value" id="occ">
 						Full Stack Developer
 					</div>
 				</div>
@@ -139,12 +139,73 @@
 					<div class="ll-dataset__label">
 						Others:
 					</div>
-					<div class="ll-dataset__value">
+					<div class="ll-dataset__value" id="others">
 						N/A
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	
 	<!-- User Meta End -->
+</div>
+<!-- Popup edit Primary Information form -->
+<div class="hidden max-w-full fixed inset-24" id="hidef_2">
+	<form action="" class="max-w-full p-2.5 bg-gray-300">
+		<h1 class="text-4xl font-bold text-center text-blue-600">EDIT PRIMARY INFORMATION</h1>
+		<div class="flex flex-wrap p-4">
+			<div class="w-full sm:w-1/2 pl-10"> 
+				<label  for="email"><b>Email:</b></label> <br>
+				<input class="w-11/12 p-2.5 my-6" id="ip_email" type="text" name="email" readonly> <br>
+				<label  for="number"><b>Number:</b></label> <br>
+				<input class="w-11/12 p-2.5 my-6" id="ip_number" type="text" name="number"> <br>
+				<button type="submit" class="w-11/12 border-solid border-2 mt-6 mx-auto p-1.5 bg-blue-600 text-white">Save</button>	
+			</div>
+			<div class="w-full sm:w-1/2 mt-4 pl-10 sm:mt-0">
+				<label  for="username"><b>User Name:</b></label> <br>
+				<input class="w-11/12 p-2.5 my-6" id="ip_username" type="text" name="username" readonly> <br>
+				<label  for="bussrole"><b>Business Role:</b></label> <br>
+				<input class="w-11/12 p-2.5 my-6" id="ip_bussrole" type="text" name="bussrole" readonly> <br>
+				<button type="button" class="w-11/12 border-solid border-2 mt-6 p-1.5 bg-blue-600 text-white" (click)="closeFormPI()">Close</button>
+			</div>
+		</div>
+	</form>
+</div>
+<!-- Popup edit Personal Information form -->
+<div class="hidden max-w-full fixed inset-24" id="hidef">
+	<form action="" class="max-w-full p-2.5 bg-gray-300">
+		<h1 class="text-4xl font-bold text-center text-blue-600">EDIT PERSONAL INFORMATION</h1>
+		<div class="flex flex-wrap p-4">
+			<div class="w-full sm:w-1/2 pl-10"> 
+				<label  for="firstname"><b>First Name:</b></label> <br>
+				<input class="w-11/12 p-2.5 my-6" id="ip_firstname" type="text" name="firstname"> <br>
+				<label  for="lastname"><b>Last Name:</b></label> <br>
+				<input class="w-11/12 p-2.5 my-6" id="ip_lastname" type="text" name="lastname"> <br>
+				<label class="" for="gender"><b>Gender: </b></label> <br>
+				<div class="my-6" name="f_gender">
+					<input class="relative mr-2" id="ip_male" type="radio" name="gender" value="Male">
+					<label class="mr-6" for="male">Male</label> 
+					<input class="relative mr-2" id="ip_female" type="radio" name="gender" value="Female">
+					<label class="mr-6" for="female">Female</label> 
+					<input class="relative mr-2" id="ip_other" type="radio" name="gender" value="Other">
+					<label class="" for="other">Other</label> <br><br>
+				</div>	
+				<label class="my-6" for="dateofbirth"><b>Date of birth:</b></label> <br>
+				<input class="w-11/12 p-2.5 my-6" id="ip_dob" type="text" name="dateofbirth">  <br>
+				<button type="submit" class="w-11/12 border-solid border-2 mt-6 p-1.5 bg-blue-600 text-white">Save</button>
+			</div>
+			<div class="w-full sm:w-1/2 mt-4 pl-10 sm:mt-0">
+				<label  for="contactnumber"><b>Contact Number:</b></label> <br>
+				<input class="w-11/12 p-2.5 my-6" id="ip_cn" type="text" name="contactnumber"> <br>
+				<label  for="organization"><b>Organization:</b></label> <br>
+				<input class="w-11/12 p-2.5 my-6" id="ip_org" type="text" name="organization"> <br>
+				<label  for="occupation"><b>Occupation:</b></label> <br>
+				<input class="w-11/12 p-2.5 my-6" id="ip_occ" type="text" name="occupation"> <br>
+				<label  for="others"><b>Others:</b></label> <br>
+				<input class="w-11/12 p-2.5 my-6" id="ip_others" type="text" name="others"> <br>
+				<button type="button" class="w-11/12 border-solid border-2 mt-6 p-1.5 bg-blue-600 text-white" (click)="closeFormPE()">Close</button>
+			</div>
+		</div>
+			
+	</form>
 </div>
