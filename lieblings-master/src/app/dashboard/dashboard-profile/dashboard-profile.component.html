@@ -23,7 +23,7 @@
 	<div class="border bg-white mt-8 rounded-md">
 		<div class="flex p-4 bg-gray-200">
 			<h3 class="text-normal">Primary Information</h3>
-			<button class="text-blue-400 hover:text-accent ml-auto flex" (click)="editPrimaryInfo()">
+			<button class="text-blue-400 hover:text-accent ml-auto flex" id="edit1" (click)="editPrimaryInfo()">
 				<mat-icon class="_edit_icon mr-2">edit</mat-icon>
 				Edit</button>
 		</div>
@@ -71,7 +71,7 @@
 	<div class="border bg-white mt-8 rounded-md">
 		<div class="flex p-4 bg-gray-200">
 			<h3 class="text-normal">Personal Information</h3>
-			<button class="text-blue-400 hover:text-accent ml-auto flex" (click)="editPersonalInfo()">
+			<button class="text-blue-400 hover:text-accent ml-auto flex" id="edit2" (click)="editPersonalInfo()">
 				<mat-icon class="_edit_icon mr-2">edit</mat-icon>
 				Edit</button>
 		</div>
@@ -152,31 +152,33 @@
 <!-- Popup edit Primary Information form -->
 <div class="hidden max-w-full fixed inset-24" id="hidef_2">
 	<form action="" class="max-w-full p-2.5 bg-gray-300">
-		<h1 class="text-4xl font-bold text-center text-blue-600">EDIT PRIMARY INFORMATION</h1>
+		<h1 class="text-4xl my-6 font-bold text-center text-blue-600">EDIT PRIMARY INFORMATION</h1>
 		<div class="flex flex-wrap p-4">
-			<div class="w-full sm:w-1/2 pl-10"> 
+			<div class="w-full sm:w-1/2 pl-14"> 
 				<label  for="email"><b>Email:</b></label> <br>
 				<input class="w-11/12 p-2.5 my-6" id="ip_email" type="text" name="email" readonly> <br>
 				<label  for="number"><b>Number:</b></label> <br>
 				<input class="w-11/12 p-2.5 my-6" id="ip_number" type="text" name="number"> <br>
-				<button type="submit" class="w-11/12 border-solid border-2 mt-6 mx-auto p-1.5 bg-blue-600 text-white">Save</button>	
+				
 			</div>
 			<div class="w-full sm:w-1/2 mt-4 pl-10 sm:mt-0">
 				<label  for="username"><b>User Name:</b></label> <br>
 				<input class="w-11/12 p-2.5 my-6" id="ip_username" type="text" name="username" readonly> <br>
 				<label  for="bussrole"><b>Business Role:</b></label> <br>
 				<input class="w-11/12 p-2.5 my-6" id="ip_bussrole" type="text" name="bussrole" readonly> <br>
-				<button type="button" class="w-11/12 border-solid border-2 mt-6 p-1.5 bg-blue-600 text-white" (click)="closeFormPI()">Close</button>
+				
 			</div>
+			<button type="submit" class="w-2/12 relative left-1/3 border-solid border-2 mt-3 p-1.5 bg-blue-600 text-white" id="save_1">Save</button>	
+			<button type="button" class="w-2/12 relative left-1/3 border-solid border-2 mt-3 p-1.5 bg-blue-600 text-white" id="Close_1" (click)="closeFormPI()">Close</button>
 		</div>
 	</form>
 </div>
 <!-- Popup edit Personal Information form -->
 <div class="hidden max-w-full fixed inset-24" id="hidef">
-	<form action="" class="max-w-full p-2.5 bg-gray-300">
-		<h1 class="text-4xl font-bold text-center text-blue-600">EDIT PERSONAL INFORMATION</h1>
+	<form action="" class="max-w-full border-solid border-2 p-2.5 bg-gray-300">
+		<h1 class="text-4xl my-6 font-bold text-center text-blue-600">EDIT PERSONAL INFORMATION</h1>
 		<div class="flex flex-wrap p-4">
-			<div class="w-full sm:w-1/2 pl-10"> 
+			<div class="w-full sm:w-1/2 pl-14"> 
 				<label  for="firstname"><b>First Name:</b></label> <br>
 				<input class="w-11/12 p-2.5 my-6" id="ip_firstname" type="text" name="firstname"> <br>
 				<label  for="lastname"><b>Last Name:</b></label> <br>
@@ -192,8 +194,10 @@
 				</div>	
 				<label class="my-6" for="dateofbirth"><b>Date of birth:</b></label> <br>
 				<input class="w-11/12 p-2.5 my-6" id="ip_dob" type="text" name="dateofbirth">  <br>
-				<button type="submit" class="w-11/12 border-solid border-2 mt-6 p-1.5 bg-blue-600 text-white">Save</button>
+				
 			</div>
+			
+
 			<div class="w-full sm:w-1/2 mt-4 pl-10 sm:mt-0">
 				<label  for="contactnumber"><b>Contact Number:</b></label> <br>
 				<input class="w-11/12 p-2.5 my-6" id="ip_cn" type="text" name="contactnumber"> <br>
@@ -202,10 +206,14 @@
 				<label  for="occupation"><b>Occupation:</b></label> <br>
 				<input class="w-11/12 p-2.5 my-6" id="ip_occ" type="text" name="occupation"> <br>
 				<label  for="others"><b>Others:</b></label> <br>
-				<input class="w-11/12 p-2.5 my-6" id="ip_others" type="text" name="others"> <br>
-				<button type="button" class="w-11/12 border-solid border-2 mt-6 p-1.5 bg-blue-600 text-white" (click)="closeFormPE()">Close</button>
+				<input class="w-11/12 p-2.5 my-6" id="ip_others" type="text" name="others"> <br>	
+				
 			</div>
+			<button type="submit" class="w-2/12 relative left-1/3 border-solid border-2 mt-3 p-1.5 bg-blue-600 text-white" id="save2">Save</button>
+			<button type="button" class="w-2/12 relative left-1/3 border-solid border-2 mt-3 p-1.5 bg-blue-600 text-white" id="close2" (click)="closeFormPE()">Close</button>			
 		</div>
+		
+		
 			
 	</form>
 </div>

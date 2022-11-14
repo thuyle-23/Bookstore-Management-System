@@ -25,6 +25,7 @@ export class DashboardProfileComponent implements OnInit {
     document.getElementById("ip_username").setAttribute('value',e);
     let f = document.getElementById("bussrole").innerHTML;
     document.getElementById("ip_bussrole").setAttribute('value',f);
+    document.getElementById("edit2").setAttribute('disabled','');
   }
 
   closeFormPI(): void{
@@ -32,6 +33,7 @@ export class DashboardProfileComponent implements OnInit {
     a.style.display = 'none';
     let b = document.getElementById("form_large");
     b.style.opacity = "1";
+    document.getElementById("edit2").removeAttribute('disabled');
   }
 
   editPersonalInfo(): void{
@@ -67,6 +69,7 @@ export class DashboardProfileComponent implements OnInit {
       default:
         break;
     }
+    document.getElementById("edit1").setAttribute('disabled','');
   }
 
   closeFormPE(): void{
@@ -74,6 +77,7 @@ export class DashboardProfileComponent implements OnInit {
     b.style.display = 'none';
     let c = document.getElementById("form_large");
     c.style.opacity = "1";
+    document.getElementById("edit1").removeAttribute('disabled');
   }
 
 }
