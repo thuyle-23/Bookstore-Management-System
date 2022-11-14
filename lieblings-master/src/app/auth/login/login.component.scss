@@ -21,6 +21,27 @@
     z-index: 2;
   }
 }
+
+.icon-eye-show{
+  position: absolute;
+  margin-left: -23px;
+  margin-top: 7px;
+}
+
+
+.icon-eye-hidden{
+  position: absolute;
+  margin-left: -23px;
+  margin-top: 7px;
+}
+
+.icon-eye-hidden.disable {
+  display: none;
+}
+
+
+
+
 @media (min-width: 768px) {
   .login {
     &__row {
